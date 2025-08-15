@@ -1,0 +1,213 @@
+# 사이트 설정
+
+# 테마 불러오기
+theme: jekyll-theme-chirpy
+
+# 웹페이지 언어 설정 › http://www.lingoes.net/en/translator/langcode.htm
+# `_data/locales` 폴더에 있는 파일명과 동일하면 레이아웃 언어도 변경됩니다.
+# 그렇지 않으면 기본값 'en'을 사용합니다.
+lang: kr
+
+# 타임존 변경 › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Asia/Shanghai
+
+# jekyll-seo-tag 설정 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: Chirpy # 메인 제목
+
+tagline: A text-focused Jekyll theme # 부제목으로 표시됩니다.
+
+description: >- # SEO 메타와 Atom 피드에서 사용됨
+  기술 문서 작성을 위한 미니멀하고 반응형이며 기능이 풍부한 Jekyll 테마.
+
+# 사이트의 프로토콜 & 호스트명 입력
+# 예: 'https://username.github.io', 마지막에 '/'를 넣지 마세요.
+url: ""
+
+github:
+  username: CherryPichu # GitHub 사용자명으로 변경
+
+twitter:
+  username: twitter_username # Twitter 사용자명으로 변경
+
+social:
+  # 전체 이름으로 변경하세요.
+  # 게시물 기본 작성자와 푸터의 저작권 소유자로 표시됩니다.
+  name: your_full_name
+  email: example@domain.com # 이메일 주소로 변경
+  links:
+    # 첫 번째 요소는 저작권 소유자의 링크로 사용됩니다.
+    - https://twitter.com/username # Twitter 홈으로 변경
+    - https://github.com/username # GitHub 홈으로 변경
+    # 추가 소셜 링크를 원하면 주석 해제 후 추가
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
+
+# 사이트 인증 설정
+webmaster_verifications:
+  google: # Google 인증 코드
+  bing: # Bing 인증 코드
+  alexa: # Alexa 인증 코드
+  yandex: # Yandex 인증 코드
+  baidu: # Baidu 인증 코드
+  facebook: # Facebook 인증 코드
+
+# ↑ --------------------------
+# `jekyll-seo-tag` 설정 끝
+
+# 웹 분석 설정
+analytics:
+  google:
+    id: # Google Analytics ID
+  goatcounter:
+    id: # GoatCounter ID
+  umami:
+    id: # Umami ID
+    domain: # Umami 도메인
+  matomo:
+    id: # Matomo ID
+    domain: # Matomo 도메인
+  cloudflare:
+    id: # Cloudflare 웹 분석 토큰
+  fathom:
+    id: # Fathom 사이트 ID
+
+# 페이지 조회수 설정
+pageviews:
+  provider: # 현재 'goatcounter'만 지원
+
+# 색상 테마 설정
+#
+# 비워두면 기본적으로 시스템 선호 색상을 따르며,
+# 왼쪽 하단의 토글 버튼으로 다크/라이트 모드를 변경할 수 있습니다.
+#
+# 사용 가능한 옵션:
+#
+#     light — 라이트 테마
+#     dark — 다크 테마
+#
+theme_mode: dark # [light | dark]
+
+# 미디어 리소스를 위한 CDN 엔드포인트
+# 설정 시, '/'로 시작하는 모든 미디어 리소스 경로 앞에 CDN URL이 추가됩니다.
+#
+# 예: 'https://cdn.com'
+cdn: "https://chirpy-img.netlify.app"
+
+# 사이드바의 아바타, 로컬 또는 CORS 리소스 지원
+avatar: "/commons/avatar.jpg"
+
+# SEO `og:image` 메타 태그에 사용되는 사이트 전체 소셜 미리보기 이미지 URL
+# front matter의 `page.image`로 개별 지정 가능
+social_preview_image: # 문자열, 로컬 또는 CORS 리소스
+
+# 전체 게시물에서 TOC 표시 여부 (boolean)
+toc: true
+
+comments:
+  # 전체 댓글 시스템 스위치. 비워두면 비활성화됨.
+  provider: # [disqus | utterances | giscus]
+  disqus:
+    shortname: # Disqus shortname 입력
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # 선택사항, 기본값 'pathname'
+    strict: # 선택사항, 기본값 '0'
+    input_position: # 선택사항, 기본값 'bottom'
+    lang: # 선택사항, 기본값 `site.lang`
+    reactions_enabled: # 선택사항, 기본값 '1'
+
+# 자체 호스팅 정적 리소스 설정 › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, 비워두면 false
+    env: # [development | production]
+
+pwa:
+  enabled: true # PWA 기능 (설치 가능)
+  cache:
+    enabled: true # PWA 오프라인 캐시
+    deny_paths:
+      # - "/example"
+
+paginate: 10
+
+# 사이트 기본 URL
+baseurl: ""
+
+# ------------ 아래 옵션은 변경 권장하지 않음 ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
